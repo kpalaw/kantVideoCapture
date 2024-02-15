@@ -10,6 +10,7 @@ project(video2 VERSION
 # Add all the source files in the current directory to the "sources" variable
 #file(GLOB sources "*.cpp")
 
+
 # Force using g++ compiler
 set(CMAKE_CXX_COMPILER g++)
 
