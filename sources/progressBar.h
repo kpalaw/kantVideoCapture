@@ -1,3 +1,11 @@
+#ifndef PROGRESSBAR_H
+#define PROGRESSBAR_H
+
+#include <iostream>
+#include <string>
+#include <chrono>
+#include <thread>
+
 #include <iostream>
 #include <string>
 
@@ -16,3 +24,5 @@ class progressBar {
     void updateBar(int, int);
     void clearBar();
   };
+
+  #endif

@@ -17,10 +17,12 @@ set(CMAKE_CXX_COMPILER g++)
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -g -lavformat -lavcodec -lavutil -lswscale -lpng -lSDL2")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -g ")
 
-# Add an executable target called "my_executable"
+# Add an executable target called "kantcap"
 add_executable(kantcap 
                sources/kantcap.cpp
-               sources/progressBar.cpp)
+               sources/progressBar.cpp
+               sources/paramExtract.cpp
+               sources/videoCapture.cpp)
 
 find_library(LIBAVFORMAT_LIBRARY avformat)
 target_link_libraries(kantcap ${LIBAVFORMAT_LIBRARY})    
