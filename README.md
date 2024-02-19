@@ -70,8 +70,17 @@ Otherwise, we need to install if the library can't be detected.
     $sudo apt-get install libpng-dev
 
 
-## Compile kantcap
-g++ kantcap.cpp -o kantcap -lavformat -lavcodec -lavutil -lswscale -lpng -lSDL2
+## Compile using "compile_kant.sh"
+
+go into "sources" folder and run
+
+    ./compile_kant.sh
 
 
- 
+
+## Compile with cmake
+at the same folder as "CMakeLists.txt"...then run
+  
+
+      $cmake -B build .
+      $cmake --build build
