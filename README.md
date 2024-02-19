@@ -70,8 +70,29 @@ Otherwise, we need to install if the library can't be detected.
     $sudo apt-get install libpng-dev
 
 
-## Compile kantcap
-g++ kantcap.cpp -o kantcap -lavformat -lavcodec -lavutil -lswscale -lpng -lSDL2
+## Compile using "compile_kant.sh"
+
+go into "sources" folder and run
+
+    ./compile_kant.sh
 
 
- 
+
+## Compile with cmake
+at the same folder as "CMakeLists.txt"...then run
+  
+
+      $cmake -B build .
+      $cmake --build build
+## Troubleshooting
+If compile errors, similar to the picture  below, you need to install more packages.
+![image](https://github.com/kpalaw/kantVideoCapture/assets/16006116/beb66aa7-1d39-4c83-b82a-e5388c3046d1)
+
+![image](https://github.com/kpalaw/kantVideoCapture/assets/16006116/56fb202c-62ad-42e0-864c-d257331a7d57)
+
+run apt-get to install packages.
+
+    $sudo  apt-get  install  -y  libavformat-dev
+    $sudo  apt-get  install  -y  libswscale-dev
+    $sudo  apt-get  install  -y  libsdl2-dev
+    $sudo  apt-get  install  -y  libpng-dev
