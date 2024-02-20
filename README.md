@@ -90,7 +90,7 @@ If compile errors, similar to the picture  below, you need to install more packa
 
 ![image](https://github.com/kpalaw/kantVideoCapture/assets/16006116/56fb202c-62ad-42e0-864c-d257331a7d57)
 
-run apt-get to install packages.
+run apt-get to install the missing packages.
 
     $sudo  apt-get  install  -y  libavformat-dev
     $sudo  apt-get  install  -y  libswscale-dev
