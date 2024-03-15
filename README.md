@@ -12,7 +12,7 @@ Ex 2. kantcap will capture frame 100 to 200 from vid.mp4 video file to PNG files
 
 Ex 3. kantcap will display vid.mp4 from frame 4000 onward.
 
-    $kantcap -vid.mp4 -p 4000
+    $kantcap -i vid.mp4 -p 4000
     $kantcap -i <inputVideo> -p <frameStart>
 
 ![image](https://github.com/kpalaw/kantVideoCapture/assets/16006116/b8251612-87a1-4a73-b80f-64aa7fb66c7a)
