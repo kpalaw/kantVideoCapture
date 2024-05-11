@@ -2,7 +2,7 @@
 ## Usage
 Ex 1. kantcap will capture frame 1000 from "vid.mp4" video file to PNG file. 
 
-    $kantca[ -i vid.mp4 -fc  1000
+    $kantcap -i vid.mp4 -fc  1000
     kantcap -i <inputVideo> -fc <frameNumber>
 
 Ex 2. kantcap will capture frame 100 to 200 from vid.mp4 video file to PNG files.
